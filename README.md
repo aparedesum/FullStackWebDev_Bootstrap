@@ -1,6 +1,7 @@
 Bootstrap demo
 
 Components:
+
 Bootstrap
 Jquery
 Popper
@@ -8,9 +9,15 @@ SASS
 Font Awesome
 Bootstrap Social
 Lite-server
-OnChange
-ParallelShell
-
+onchange
+parallelshell
+rimraf
+copyfiles
+imagemin-cli
+usemin-cli
+cssmin
+uglifyjs
+htmlmin
 
 Setup initial env:
 
@@ -21,7 +28,6 @@ npm install font-awesome@4.7.0 --save
 npm install bootstrap-social@5.1.1 --save
 npm install lite-server --save-dev
 npm install --save-dev node-sass@4.7.2
-
 npm install --save-dev onchange@3.3.0 parallelshell@3.0.2
 
 Cleaning up a distribution folder:
@@ -38,16 +44,13 @@ sudo npm install -g imagemin-cli@3.0.0 --unsafe-perm=true --allow-root
 Then, install the usemin-cli, cssmin, uglifyjs and htmlmin NPM packages as follows:
 npm install --save-dev usemin-cli@0.5.1 cssmin@0.4.3 uglifyjs@2.4.11 htmlmin@0.0.7
 
-
 Notes on package.json file:
 
 MAC OS / Linux
 "watch:scss": "onchange 'css/*.scss' -- npm run scss",
-    
 "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'
 
 Windows
-"watch:scss": "onchange \"css/*.scss\" -- npm run scss",
-    
+"watch:scss": "onchange \"css/*.scss\" -- npm run scss",   
 "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
 
