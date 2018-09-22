@@ -70,3 +70,8 @@ Installing Grunt & Components
 - npm install grunt-contrib-uglify@3.3.0 --save-dev
 - npm install grunt-filerev@2.3.1 --save-dev
 - npm install grunt-usemin@3.1.1 --save-dev
+
+Installing Gulp & Components:
+- npm install -g gulp-cli@2.0.1
+- npm install gulp@3.9.1 --save-dev
+- npm install gulp-sass@3.1.0  browser-sync@2.23.6 --save-dev
